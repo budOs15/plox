@@ -1,4 +1,4 @@
-package com.budos15.plox;
+package com.budos15.plox.entity;
 
 import java.time.LocalDateTime;
 

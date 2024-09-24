@@ -1,4 +1,4 @@
-package com.budos15.plox;
+package com.budos15.plox.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.budos15.plox.entity.Cart;
+import com.budos15.plox.entity.Orders;
+import com.budos15.plox.repository.CartRepository;
 
 @RestController
 @RequestMapping("/carts")
