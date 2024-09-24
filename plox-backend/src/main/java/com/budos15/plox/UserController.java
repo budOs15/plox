@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.budos15.plox.JpaRepositories.UserRepository;
 
 
 
@@ -20,12 +19,12 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping
-    public List<User> getAllUsers() {
+    public List<Users> getAllUsers() {
         return userRepository.findAll();
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user){
+    public Users createUser(@RequestBody Users user){
         return userRepository.save(user);
     }
 }

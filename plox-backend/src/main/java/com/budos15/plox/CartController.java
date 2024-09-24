@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.budos15.plox.JpaRepositories.CartRepository;
-
 @RestController
 @RequestMapping("/carts")
 public class CartController {
@@ -60,11 +58,11 @@ public class CartController {
     }
 
     @PostMapping("/{cartId}/checkout")
-    public ResponseEntity<Order> checkout(@PathVariable Long cartId) {
+    public ResponseEntity<Orders> checkout(@PathVariable Long cartId) {
         Optional<Cart> cartOptional = cartRepository.findById(cartId);
         if (cartOptional.isPresent()) {
             Cart cart = cartOptional.get();
-            Order order = cart.checkout();
+            Orders order = cart.checkout();
             cartRepository.save(cart);
             return ResponseEntity.status(HttpStatus.CREATED).body(order);
         } else {

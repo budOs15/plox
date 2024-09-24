@@ -12,7 +12,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cartId;
     @ManyToOne
-    private User userId;
+    private Users userId;
     @ManyToOne
     private Product product;
     private Integer quantity;
@@ -25,11 +25,11 @@ public class Cart {
         this.cartId = cartId;
     }
 
-    public User getUser(){
+    public Users getUser(){
         return userId;
     }
 
-    public void setUser(User user){
+    public void setUser(Users user){
         this.userId = user;
     }
 
@@ -53,7 +53,7 @@ public class Cart {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public Order checkout() {
+    public Orders checkout() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
