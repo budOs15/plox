@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.budos15.plox.entity.Orders;
 
 @Repository
-public interface OrderRepository extends JpaRepository<Orders, Long> {}
+public interface OrderRepository extends JpaRepository<Orders, Long> {
+    //implement repo
+}

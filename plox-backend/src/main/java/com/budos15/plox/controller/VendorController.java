@@ -28,4 +28,6 @@ public class VendorController {
     public Vendor createVendor(@RequestBody Vendor vendor){
         return vendorRepository.save(vendor);
     }
+
+    //add put and delete
 }

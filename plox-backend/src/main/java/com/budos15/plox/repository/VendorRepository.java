@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.budos15.plox.entity.Vendor;
 
 @Repository
-public interface VendorRepository extends JpaRepository<Vendor, Long> {}
+public interface VendorRepository extends JpaRepository<Vendor, Long> {
+    //implement repo
+}

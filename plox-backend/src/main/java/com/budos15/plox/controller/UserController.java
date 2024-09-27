@@ -30,4 +30,6 @@ public class UserController {
     public Users createUser(@RequestBody Users user){
         return userRepository.save(user);
     }
+
+    // add put and delete
 }

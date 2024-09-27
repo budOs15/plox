@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 import com.budos15.plox.entity.Cart;
 
 @Repository
-public interface CartRepository extends JpaRepository<Cart, Long> {}
+public interface CartRepository extends JpaRepository<Cart, Long> {
+    // implement repo
+}
