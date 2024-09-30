@@ -1,4 +1,4 @@
-package com.budos15.plox;
+package com.budos15.plox.entity;
 
 import java.time.LocalDateTime;
 
@@ -9,12 +9,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Order {
+public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
     @ManyToOne
-    private User userId;
+    private Users userId;
     @ManyToOne
     private Product product;
     private Integer quantity;
@@ -28,11 +28,11 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public User getUser(){
+    public Users getUser(){
         return userId;
     }
 
-    public void setUser(User user){
+    public void setUser(Users user){
         this.userId = user;
     }
 

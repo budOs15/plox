@@ -1,4 +1,4 @@
-package com.budos15.plox;
+package com.budos15.plox.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.budos15.plox.JpaRepositories.OrderRepository;
+import com.budos15.plox.entity.Orders;
+import com.budos15.plox.repository.OrderRepository;
+
 
 @RestController
 @RequestMapping("/orders")
@@ -22,19 +24,21 @@ public class OrderController {
     private OrderRepository orderRepository;
 
     @GetMapping
-    public List<Order> getAllOrders() {
+    public List<Orders> getAllOrders() {
         return orderRepository.findAll();
     }
 
     @PostMapping
-    public Order createOrder(@RequestBody Order order) {
+    public Orders createOrder(@RequestBody Orders order) {
         return orderRepository.save(order);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrderById(@PathVariable Long id) {
-        Optional<Order> order = orderRepository.findById(id);
+    public ResponseEntity<Orders> getOrderById(@PathVariable Long id) {
+        Optional<Orders> order = orderRepository.findById(id);
         return order.map(ResponseEntity::ok)
                     .orElseGet(() -> ResponseEntity.notFound().build());
     }
+
+    // add put and delete
 }

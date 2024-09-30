@@ -1,4 +1,4 @@
-package com.budos15.plox;
+package com.budos15.plox.controller;
 
 import java.util.List;
 
@@ -9,21 +9,27 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.budos15.plox.JpaRepositories.VendorRepository;
+import com.budos15.plox.entity.Users;
+import com.budos15.plox.repository.UserRepository;
+
+
+
 
 @RestController
-@RequestMapping("/vendors")
-public class VendorController {
+@RequestMapping("/users")
+public class UserController {
     @Autowired
-    private VendorRepository vendorRepository;
-    
+    private UserRepository userRepository;
+
     @GetMapping
-    public List<Vendor> getAllVendors(){
-        return vendorRepository.findAll();
+    public List<Users> getAllUsers() {
+        return userRepository.findAll();
     }
 
     @PostMapping
-    public Vendor createVendor(@RequestBody Vendor vendor){
-        return vendorRepository.save(vendor);
+    public Users createUser(@RequestBody Users user){
+        return userRepository.save(user);
     }
+
+    // add put and delete
 }
