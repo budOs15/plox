@@ -9,5 +9,4 @@ class PloxApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
