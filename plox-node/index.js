@@ -7,7 +7,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'postgres',
     database: 'plox',
-    port: 5432,
+    port: 3000,
 });
 
 app.get('/', (req, res) => {
