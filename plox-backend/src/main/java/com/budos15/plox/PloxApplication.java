@@ -10,4 +10,4 @@ public class PloxApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PloxApplication.class, args);
 	}
-} 
+}
