@@ -1,7 +1,7 @@
 # Welcome to Plox!
 
 Plox is a project for a food delivery app, born from the ashes of another project
-which never saw the light, where my team and I were trying to create a delivery
+which never saw the light, where me and some other guys were trying to create a delivery
 application implementing AI.
 
 This project is primarily aimed at helping me practice coding and learn various
