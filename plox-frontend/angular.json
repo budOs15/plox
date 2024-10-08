@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/plox-frontend",
-            "index": "src/index.html",
+            "index": "src/resources/static/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -27,7 +27,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/resources/static/styles.css"
             ],
             "scripts": []
           },
