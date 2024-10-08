@@ -85,4 +85,4 @@ Here are some guidelines for you if you want to get involved in this project.
 
 ## License
 
-This project is licensed under the MIT license.
+Working on it!
