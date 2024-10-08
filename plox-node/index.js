@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 3000;
 const { Pool } = require('pg');
 const { database } = require('pg/lib/defaults');
 const pool = new Pool({
