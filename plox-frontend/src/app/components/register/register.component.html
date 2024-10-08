@@ -1,0 +1,39 @@
+<div class="register-container">
+    <form (ngSubmit)="register()">
+      <h2>Registrazione</h2>
+      <div>
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" [(ngModel)]="user.userName" name="userName" required>
+      </div>
+      <div>
+        <label for="userFirstName">Nome:</label>
+        <input type="text" id="userFirstName" [(ngModel)]="user.userFirstName" name="userFirstName" required>
+      </div>
+      <div>
+        <label for="userLastName">Cognome:</label>
+        <input type="text" id="userLastName" [(ngModel)]="user.userLastName" name="userLastName" required>
+      </div>
+      <div>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" [(ngModel)]="user.userEmail" name="userEmail" required>
+      </div>
+      <div>
+        <label for="userAddress">Indirizzo:</label>
+        <input type="text" id="userAddress" [(ngModel)]="user.userAddress" name="userAddress">
+      </div>
+      <div>
+        <label for="userPhoneNum">Telefono:</label>
+        <input type="text" id="userPhoneNum" [(ngModel)]="user.userPhoneNum" name="userPhoneNum">
+      </div>
+      <div>
+        <label for="userPassword">Password:</label>
+        <input type="password" id="userPassword" [(ngModel)]="user.userPassword" name="userPassword" required>
+      </div>
+      <div>
+        <label for="confirmPassword">Conferma Password:</label>
+        <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="submit">Registrati</button>
+      <div class="error-message" *ngIf="errorMessage">{{errorMessage}}</div>
+    </form>
+  </div>

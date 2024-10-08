@@ -1,0 +1,11 @@
+<div class="order-container">
+    <h2>Ordini</h2>
+    <div *ngFor="let order of orders" class="order-item">
+      <h3>Ordine #{{ order.orderId }}</h3>
+      <p>Utente: {{ order.userId }}</p>
+      <p>Prodotto: {{ order.product }}</p>
+      <p>Quantità: {{ order.quantity }}</p>
+      <p>Data Ordine: {{ order.orderDate | date }}</p>
+      <p>Totale: {{ order.totalAmount | currency }}</p>
+    </div>
+  </div>  
