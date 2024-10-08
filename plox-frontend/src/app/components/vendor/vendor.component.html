@@ -1,0 +1,8 @@
+<div class="vendor-container">
+    <h2>Venditori</h2>
+    <div *ngFor="let vendor of vendors" class="vendor-item">
+      <h3>{{ vendor.vendorName }}</h3>
+      <p>Email: {{ vendor.vendorEmail }}</p>
+      <p>Telefono: {{ vendor.vendorPhoneNum }}</p>
+    </div>
+  </div>  
