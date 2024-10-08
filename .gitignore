@@ -35,6 +35,6 @@ build/
 ### .env ###
 .env
 
-# Docker files
+### Docker files ###
 docker-compose.yml
-Dockerfile
+dockerfile
