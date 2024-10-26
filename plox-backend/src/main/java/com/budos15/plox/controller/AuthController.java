@@ -10,11 +10,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.budos15.plox.JwtProvider;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.budos15.plox.JwtProvider;
+import com.budos15.plox.JwtResponse;
+import com.budos15.plox.LoginRequest;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -24,7 +25,7 @@ public class AuthController {
     AuthenticationManager authenticationManager;
 
     @Autowired
-    JwtProvider jwtProviderMJwtProvider
+    JwtProvider jwtProvider;
 
     @PostMapping("/login")
     public ResponseEntity<?> authenticationUser(@RequestBody LoginRequest loginRequest) {

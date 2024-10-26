@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScans;
 	"com.budos15.plox.plox-backend.controller.ProductController",
 	"com.budos15.plox.plox-backend.controller.OrderController",
 	"com.budos15.plox.plox-backend.controller.CartController"
-});
+})
 public class PloxApplication {
 
 	public static void main(String[] args) {
