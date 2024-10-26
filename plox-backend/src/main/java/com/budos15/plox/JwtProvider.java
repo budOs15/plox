@@ -16,7 +16,7 @@ public class JwtProvider {
     private String jwtSecret = "root";
     private int jwtExpiration = 86400000;
 
-    public String generateJetToken(Authentication authentication) {
+    public String generateJwtToken(Authentication authentication) {
         UserDetails userPrincipal = (UserDetails) authentication.getPrincipal();
         return Jwts.builder()
                 .setSubject((userPrincipal.getUsername()))
