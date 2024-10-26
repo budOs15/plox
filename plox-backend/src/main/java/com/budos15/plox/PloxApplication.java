@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
@@ -13,7 +12,8 @@ import org.springframework.context.annotation.ComponentScans;
 	"com.budos15.plox.plox-backend.controller.ProductController",
 	"com.budos15.plox.plox-backend.controller.OrderController",
 	"com.budos15.plox.plox-backend.controller.CartController"
-});
+})
+
 public class PloxApplication {
 
 	public static void main(String[] args) {
