@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.budos15.plox.JwtProvider;
-import com.budos15.plox.JwtResponse;1
-import com.budos15.plox.LoginRequest;
 
 @RestController
 @RequestMapping("/api/auth")
