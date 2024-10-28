@@ -1,7 +1,0 @@
-FROM postgres:latest
-
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=root
-ENV POSTGRES_DB=plox
-
-EXPOSE 5432
