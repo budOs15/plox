@@ -57,32 +57,6 @@ Here are some guidelines for you if you want to get involved in this project.
 
 1. Access the frontend at `http://localhost:4200`
 
-
-## Contributing
-
-1. Fork the project.
-2. Create a new branch:
-
-    ```bash
-    git checkout -b feature/feature-name
-    ```
-
-3. Commit your changes:
-
-    ```bash
-    git add .
-    git commit -m "Add feature: your-feature-description"
-    ```
-
-4. Push the branch:
-
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-
-5. Create a Pull Request.
-
-
 ## License
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more details.
